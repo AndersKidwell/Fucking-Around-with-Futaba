@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bglc7j8jduooe"]
+
+[ext_resource type="Texture2D" uid="uid://cqtqvd62c6pwa" path="res://textures/background.jpg" id="1_n7du8"]
+[ext_resource type="Texture2D" uid="uid://c13qmxxlnvp1w" path="res://textures/futaba.png" id="2_0osg1"]
+[ext_resource type="Script" path="res://scripts/futaba.gd" id="3_wppj3"]
+[ext_resource type="AudioStream" uid="uid://dngoh0hh2sk8p" path="res://music/joy.mp3" id="4_m3xh2"]
+
+[node name="MyLevel" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(575, 278)
+scale = Vector2(0.39125, 0.39125)
+texture = ExtResource("1_n7du8")
+
+[node name="Futaba" type="Sprite2D" parent="."]
+position = Vector2(605, 324)
+scale = Vector2(0.422616, 0.373365)
+texture = ExtResource("2_0osg1")
+script = ExtResource("3_wppj3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_m3xh2")
+autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 6.0
+offset_top = 464.0
+offset_right = 153.0
+offset_bottom = 653.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Move: [color=red]Arrow Keys[/color]
+Rotate: [color=red]A or D[/color]
+Scale : [color=red]W or S[/color]
+
+Reset Rotation: [color=red]E[/color]
+Reset Scale: [color=red]R[/color]
+Reset Position: [color=red]Z[/color]
+Reset All: [color=red]X[/color]"

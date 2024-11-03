@@ -1,0 +1,37 @@
+git push -u origin main[gd_scene load_steps=6 format=3 uid="uid://ckauq1irwa4hx"]
+
+[ext_resource type="Texture2D" uid="uid://bbqtxltoy0wpn" path="res://textures/background intro.png" id="1_s53ne"]
+[ext_resource type="Texture2D" uid="uid://lbw4hhguv8dy" path="res://textures/anders.png" id="1_y3lot"]
+[ext_resource type="FontFile" uid="uid://dhi1tt8kjkki6" path="res://font/Daydream.ttf" id="2_su0bm"]
+[ext_resource type="Script" path="res://anders.gd" id="3_tufu4"]
+[ext_resource type="AudioStream" uid="uid://bo4jkkfka8lnq" path="res://music/AndersKidwell.mp3" id="4_agn2b"]
+
+[node name="Intro" type="Node2D"]
+
+[node name="Background Intro" type="Sprite2D" parent="."]
+position = Vector2(579.75, 319.5)
+scale = Vector2(0.670277, 0.6725)
+texture = ExtResource("1_s53ne")
+
+[node name="Anders" type="Sprite2D" parent="."]
+position = Vector2(574, 411)
+scale = Vector2(0.803723, 0.803723)
+texture = ExtResource("1_y3lot")
+script = ExtResource("3_tufu4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 48.0
+offset_top = 56.0
+offset_right = 1628.0
+offset_bottom = 279.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("2_su0bm")
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "Anders Kidwell"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_agn2b")

@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bglc7j8jduooe"]
+
+[ext_resource type="Texture2D" uid="uid://bjqg0ygxg2gnr" path="res://textures/picture.jpg" id="1_we76j"]
+[ext_resource type="Texture2D" uid="uid://c1iawcgjjc7to" path="res://icon.svg" id="1_wjblq"]
+[ext_resource type="Script" path="res://anime_girl.gd" id="2_oubct"]
+
+[node name="MyLevel" type="Node2D"]
+
+[node name="AnimeGirl" type="Sprite2D" parent="."]
+position = Vector2(605, 324)
+scale = Vector2(0.422616, 0.373365)
+texture = ExtResource("1_we76j")
+script = ExtResource("2_oubct")
+
+[node name="Face" type="Sprite2D" parent="."]
+position = Vector2(91, 123)
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Face"]
+position = Vector2(379.429, 0)
+scale = Vector2(1, 1)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Face"]
+position = Vector2(185.143, 182.857)
+scale = Vector2(0.428571, 1.14286)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Face"]
+position = Vector2(187.429, 251.428)
+scale = Vector2(0.857143, 0.5)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Face"]
+position = Vector2(194.286, 378.286)
+scale = Vector2(2.28571, 0.267857)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Face"]
+position = Vector2(9.14282, 345.143)
+rotation = 0.523599
+scale = Vector2(1.13352, 0.277052)
+texture = ExtResource("1_wjblq")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Face"]
+position = Vector2(393.143, 345.143)
+rotation = 2.61799
+scale = Vector2(1.13352, 0.277052)
+texture = ExtResource("1_wjblq")
