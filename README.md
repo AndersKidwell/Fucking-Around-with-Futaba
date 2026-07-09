@@ -17,4 +17,4 @@ This program may flag Windows Defender. I am still figuring out how to sign my p
 GDScript is very similar to Python, so I was literally just messing with transforms. haha
 <br>
 <br>
-![Thank you!](https://github.com/AndersKidwell/Fucking-Around-with-Futaba/blob/main/textures/anders.png)
+![Thank you!](https://github.com/AndersKidwell/Fucking-Around-with-Futaba/anders.png)
