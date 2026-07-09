@@ -1,5 +1,9 @@
 <h1>Fucking Around with Futaba</h1>
-
+<br>
+<br>
+<center>
+<img src="https://github.com/AndersKidwell/Fucking-Around-with-Futaba/blob/main/textures/futaba.png">
+</center>
 <br>
 <br>
 <h2>What it is:</h2>
@@ -17,4 +21,6 @@ This program may flag Windows Defender. I am still figuring out how to sign my p
 GDScript is very similar to Python, so I was literally just messing with transforms. haha
 <br>
 <br>
+<center>
 <img src="https://github.com/AndersKidwell/Fucking-Around-with-Futaba/blob/main/anders.png">
+</center>
